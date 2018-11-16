@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Snap Scroll</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> -->
+	<style type="text/css">
+		body {
+			padding: 0;
+			margin: 0;	
+			font-family: 'Rajdhani', sans-serif;
+			scroll-snap-type: y proximity;
+			overflow-y: scroll;		
+		}
+		h1 {				
+			font-size: 60px;
+			line-height: normal;
+			font-weight: normal;
+			margin: 0;
+		}
+		p {
+			font-size: 24px;			
+		}
+		section {
+			background: #294202;
+			color: #fff;
+			height: calc(100vh - 10em);
+			padding: 50px 20px;
+			box-sizing: border-box;
+			scroll-snap-align: start;
+		}	
+		section:nth-child(2) {
+			background: #04266b;
+		}
+		section:nth-child(3) {
+			background: #4f0450;
+		}
+		section:nth-child(4) {
+			background: #1f1f1f;
+		}
+	</style>
+</head>
+<body>
+	
+	<section>
+		<h1>This is snap scrolling section</h1>
+		<p>Because this is a snap scrolling section, that's why i'm a paragraph for this</p>
+	</section>
+	<section>
+		<h1>This is snap scrolling section</h1>
+		<p>Because this is a snap scrolling section, that's why i'm a paragraph for this</p>
+	</section>
+	<section>
+		<h1>This is snap scrolling section</h1>
+		<p>Because this is a snap scrolling section, that's why i'm a paragraph for this</p>
+	</section>
+	<section>
+		<h1>This is snap scrolling section</h1>
+		<p>Because this is a snap scrolling section, that's why i'm a paragraph for this</p>
+	</section>
+
+</body>
+</html>
